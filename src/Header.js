@@ -1,11 +1,13 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
+import HeaderOption from "./HeaderOption";
+import HomeIcone from "@material-ui/icons/Home";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 // Header component
 function Header() {
   return (
     <div className="header">
-      <h1>This is a header</h1>
       <div className="header_left">
         {/* Logo image */}
         <img
@@ -18,7 +20,10 @@ function Header() {
           <input type="text" />
         </div>
       </div>
-      <div className="header_right"></div>
+      <div className="header_right">
+        <HeaderOption Icon={HomeIcone} title="Home" />
+        <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+      </div>
     </div>
   );
 }
