@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { Topic } from "@mui/icons-material";
+import Avatar from "@mui/icons-material/AccountCircle";
 const Sidebar = () => {
   const recentItem = (topic) => {
     return (
@@ -17,7 +18,7 @@ const Sidebar = () => {
           src="https://images.unsplash.com/photo-1631631480669-535cc43f2327?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
         />
-        {/* <Avatar className="sidebar_avatar" /> */}
+        <Avatar className="sidebar_avatar" />
         <h2>Username</h2>
         <h4>email</h4>
       </div>
