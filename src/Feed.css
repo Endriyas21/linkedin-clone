@@ -4,8 +4,7 @@
 }
 
 .feed_inputContainer {
-  display: flex;
-  justify-content: space-evenly;
+  padding: 10px;
   background-color: white;
   border-radius: 10px;
   padding-bottom: 20px;
@@ -33,4 +32,13 @@
   outline-width: 0;
   font-weight: 600;
   flex: 1;
+}
+
+.feed_input > form > button {
+  display: none;
+}
+
+.feed_inputOptions {
+  display: flex;
+  justify-content: space-evenly;
 }
